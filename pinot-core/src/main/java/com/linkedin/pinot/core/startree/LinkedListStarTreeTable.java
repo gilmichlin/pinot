@@ -183,6 +183,9 @@ public class LinkedListStarTreeTable implements StarTreeTable {
         fromByteBuffer(buffer, reuse);
         return reuse;
       }
+
+       @Override
+      public void remove() {throw new UnsupportedOperationException("remove");}
     };
   }
 
